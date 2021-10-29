@@ -20,7 +20,7 @@ SCRIPT_FILE="$(readlink -f "$0")"
 SCRIPT_DIR="$(dirname "$SCRIPT_FILE")"
 source $SCRIPT_DIR/common.sh
 
-DEFAULT_VALUES_PATH="streamline-helm/values.yaml"
+DEFAULT_VALUES_PATH="values.yaml"
 VALUES_PATH=${1:-$DEFAULT_VALUES_PATH}
 VALUES_PATH=${VALUES_PATH%%+(/)} # removes trailing slash
 
